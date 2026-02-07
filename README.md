@@ -1,48 +1,43 @@
 # fDE_cosmo
 
-This repository contains modified versions of **CLASS** and **MontePython** that implement a dark-energy background parametrization directly in terms of the dark-energy density evolution,
+This repository contains modified versions of **CLASS** and **MontePython** that implement a dark-energy background parametrization directly in terms of the dark-energy density evolution
 
-\[
-f_{\rm DE}(z)\equiv \frac{\rho_{\rm DE}(z)}{\rho_{{\rm DE},0}},
-\qquad\text{so that}\qquad
-\rho_{\rm DE}(a)=\rho_{{\rm DE},0}\,f_{\rm DE}(a),
-\]
-with \(a=1/(1+z)\).
+    f_DE(z) = rho_DE(z) / rho_DE,0
 
-The purpose of this project is to test this parametrization against the standard CPL \(w_0\)–\(w_a\) model, using both DESI-like mock data and real DESI data.
+equivalently
+
+    rho_DE(a) = rho_DE,0 * f_DE(a)    with    a = 1/(1+z).
+
+The goal is to test this parametrization against the standard CPL w0–wa model, using both DESI-like mock data and real DESI data.
 
 ---
 
-## Dark-energy parametrizations implemented
+## Dark-energy parametrizations implemented (background level)
 
-All models are defined at the **background level** via \(f_{\rm DE}(a)\).
+Expansion around today (a = 1):
 
-### Expansion around today (\(a=1\))
+- Linear (1st order):
+  
+      f_DE(a) = 1 + f_a (1 - a)
 
-**Linear (1st order):**
-\[
-f_{\rm DE}(a)=1+f_a(1-a).
-\]
+- Quadratic (2nd order):
+  
+      f_DE(a) = 1 + f_a (1 - a) + f_b (1 - a)^2
 
-**Quadratic (2nd order):**
-\[
-f_{\rm DE}(a)=1+f_a(1-a)+f_b(1-a)^2.
-\]
-
-These forms replace the usual equation-of-state parametrization \((w_0,w_a)\) and allow the background evolution to be specified directly in terms of \(\rho_{\rm DE}(a)\).
+These forms replace specifying (w0, wa) and instead directly parameterize rho_DE(a).
 
 ---
 
 ## Repository structure
 
 - `class_fDE/`  
-  Modified version of **CLASS** implementing the \(f_{\rm DE}(a)\) parametrization at the background level.
+  Modified **CLASS** implementing the f_DE(a) parametrization at the background level.
 
 - `montepython_fDE/`  
-  Modified version of **MontePython** that interfaces with `class_fDE` and allows sampling of the new dark-energy parameters.
+  Modified **MontePython** that interfaces with `class_fDE` and allows sampling of the new DE parameters.
 
 - `mock_desi_data_dir/`  
-  Utilities to generate DESI-like mock data vectors and covariances for validation and forecasting.
+  Utilities to generate DESI-like mock data vectors and covariances for validation/forecasting.
 
 ---
 
