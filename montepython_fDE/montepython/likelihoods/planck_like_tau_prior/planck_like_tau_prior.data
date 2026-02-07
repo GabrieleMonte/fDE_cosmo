@@ -1,0 +1,4 @@
+# Prior on tau from Planck: sigma(tau) = 0.01
+
+planck_like_tau_prior.mean_tau_reio = 0.0543
+planck_like_tau_prior.sigma_tau_reio = 0.01

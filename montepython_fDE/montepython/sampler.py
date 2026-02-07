@@ -689,7 +689,7 @@ def compute_lkl(cosmo, data):
 
 
     """
-    from classy import CosmoSevereError, CosmoComputationError
+    from classy_fDE import CosmoSevereError, CosmoComputationError
 
     # If the cosmological module has already been called once, and if the
     # cosmological parameters have changed, then clean up, and compute.

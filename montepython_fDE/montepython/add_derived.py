@@ -16,7 +16,7 @@ import io_mp
 import sampler
 from data import Data
 from data import Parameter
-from classy import CosmoComputationError
+from classy_fDE import CosmoComputationError
 from io_mp import dictitems,dictvalues,dictkeys
 
 def run(cosmo, data, command_line):

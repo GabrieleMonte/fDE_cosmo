@@ -160,10 +160,12 @@ def recover_cosmological_module(data):
         try:
             classy_path = ''
             for elem in os.listdir(os.path.join(
-                    data.path['cosmo'], "python", "build")):
+                    #data.path['cosmo'], "python", "build")):
+                    data.path['cosmo'], "build")):
                 if elem.find("lib.") != -1 and elem.find(sys.version)!=-1:
                     classy_path = os.path.join(
-                        data.path['cosmo'], "python", "build", elem)
+                       # data.path['cosmo'], "python", "build", elem)
+                       data.path['cosmo'], "build", elem)
                 if len(classy_path)==1:
                     classy_path = classy_path[0]
                 else:
@@ -182,7 +184,7 @@ def recover_cosmological_module(data):
         # search for python modules.
         sys.path.insert(1, classy_path)
         try:
-            from classy import Class
+            from classy_fDE import Class
         except ImportError:
             raise io_mp.MissingLibraryError(
                 "You must have compiled the classy.pyx file. Please go to " +
