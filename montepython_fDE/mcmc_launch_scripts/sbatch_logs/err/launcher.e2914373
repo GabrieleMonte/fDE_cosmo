@@ -1,0 +1,1883 @@
+using /tmp/launcher.2914373.hostlist.NSgiAWgV to get hosts
+starting job on c307-005
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:lNx+NkCSv1ZuZ56R/4IufvAk3QyeQHRgZRhLmv0VTUM.
+Please contact your system administrator.
+Add correct host key in /home1/09218/gab97/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home1/09218/gab97/.ssh/known_hosts:15
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+[c307-005:3293602:0:3293602] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:3293602) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 3293602 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 3 --silent
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.150133e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.891514e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.002335e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.386674e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.008215e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.481989e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.065609e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.120448e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.269833e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.196360e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.240798e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.022475e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.001783e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.029403e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.090310e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.112744e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.090830e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.059671e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.407283e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.092357e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.109767e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.187935e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.696140e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.639151e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.323555e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.777025e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.012586e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.030157e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.200823e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.186214e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.064580e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.116312e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.083235e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.350514e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.280694e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.076224e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.296990e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.212826e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.269385e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.114627e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.169021e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.001455e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.247325e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.027556e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.075948e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.258248e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.149579e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.099648e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.167643e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.296118e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.011191e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.075860e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.329155e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.145468e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.693411e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.002875e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.969704e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.858977e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.268528e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.845638e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.042656e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.943175e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.864614e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.017318e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.787141e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.700356e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.861150e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.995339e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.373114e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.990172e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.590416e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.493189e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.812825e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.586411e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.830774e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.458575e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.491965e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.682634e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.028398e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.111123e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.124557e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.185159e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.364835e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.235615e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.595897e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.026840e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.056459e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.469736e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.052945e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.013864e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.639953e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.659654e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.310342e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.250171e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.162240e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.336656e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.061920e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.985706e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.660694e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.330521e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.210458e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.131071e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.071642e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.406708e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.956229e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.176183e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.389538e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.853386e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.284945e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.168897e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.428443e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.022546e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.763328e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.955223e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.637455e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.089434e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.230440e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.845040e-04. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.883332e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.868042e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.788173e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.141907e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.871229e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:660) :condition (omega_b > omegab[num_omegab-1]) is true; You have asked for an unrealistic high value omega_b = 4.136173e-02. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.851145e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.355794e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.785897e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.160317e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.018262e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.200001e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.684860e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.335358e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.819205e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.927033e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.565136e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.826515e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.654523e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.878508e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.404920e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.486179e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.876962e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.553793e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.956754e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.226240e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.256415e-04. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.898618e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.790801e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 1.400901e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.689940e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 2.655522e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.474852e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.631237e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.556420e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 3.521481e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.362339e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.221068e-04. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:928) :error in input_fzerofun_1d(x1, pfzw, &f1, errmsg);
+=>input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1409) :error in thermodynamics_init(&pr,&ba,&th);
+=>thermodynamics_init(L:342) :error in thermodynamics_helium_from_bbn(ppr,pba,pth);
+=>thermodynamics_helium_from_bbn(L:655) :condition (omega_b < omegab[0]) is true; You have asked for an unrealistic small value omega_b = 4.480493e-03. The corresponding value of the primordial helium fraction cannot be found in the interpolation table. If you really want this value, you should fix YHe to a given value rather than to BBN
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 747, in compute_lkl
+    cosmo.compute()
+  File "python/classy.pyx", line 352, in classy_fDE.Class.compute
+classy_fDE.CosmoSevereError: 
+
+Error in Class: input_read_from_file(L:428) :error in input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop, errmsg);
+=>input_read_parameters(L:1665) :error in input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose, errmsg);
+=>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is true; You cannot set the baryon density to negative values.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts/../montepython/MontePython.py", line 40, in <module>
+    sys.exit(run())
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/run.py", line 45, in run
+    sampler.run(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 46, in run
+    mcmc.chain(cosmo, data, command_line)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/mcmc.py", line 787, in chain
+    newloglike = sampler.compute_lkl(cosmo, data)
+  File "/work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/montepython/sampler.py", line 758, in compute_lkl
+    raise io_mp.CosmologicalModuleError(
+io_mp.CosmologicalModuleError: 
+
+Cosmological Module Error:
+ /|\   Something went wrong when calling CLASS
+/_o_\  Error in Class: input_read_from_file(L:428) :error in
+       input_read_parameters(pfc,ppr,pba,pth,ppt,ptr,ppm,phr,pfo,ple,psd,pop,
+       errmsg);
+       =>input_read_parameters(L:1665) :error in
+       input_read_parameters_species(pfc,ppr,pba,pth,ppt, input_verbose,
+       errmsg);
+       =>input_read_parameters_species(L:2419) :condition (pba->Omega0_b<0) is
+       true; You cannot set the baryon density to negative values.
+

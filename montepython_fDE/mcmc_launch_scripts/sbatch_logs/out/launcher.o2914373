@@ -1,0 +1,2136 @@
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/mcmc_launch_scripts
+   Processes per host: 8
+   Total processes:    8
+   Total jobs:         8
+   Scheduling method:  dynamic
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 2 running job 1 on c307-005.ls6.tacc.utexas.edu (python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 1 --silent)
+Launcher: Task 4 running job 2 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 2 --silent)
+Launcher: Task 5 running job 3 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 3 --silent)
+Launcher: Task 3 running job 4 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 4 --silent)
+Launcher: Task 1 running job 6 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 2 --silent)
+Launcher: Task 0 running job 5 on c307-005.ls6.tacc.utexas.edu (sleep 40; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 1 --silent)
+Launcher: Task 6 running job 7 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 3 --silent)
+Launcher: Task 7 running job 8 on c307-005.ls6.tacc.utexas.edu (sleep 10; python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 4 --silent)
+Launcher: Job 7 completed in 70 seconds.
+Launcher: Task 6 done. Exiting.
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__1.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 145 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 171 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 183 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 129 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.295013 	for  omega_b
+           1.402258 	for  omega_m
+           0.234682 	for  100*theta_s
+           0.904869 	for  ln10^{10}A_s
+           0.853448 	for  n_s
+           0.033540 	for  tau_reio
+           0.416816 	for  Omega_Lambda
+           0.196375 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 165 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 209 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 229 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 160 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.157203 	for  omega_b
+           0.482045 	for  omega_m
+           0.222538 	for  100*theta_s
+           0.822106 	for  ln10^{10}A_s
+           0.267555 	for  n_s
+           0.022290 	for  tau_reio
+           0.184281 	for  Omega_Lambda
+           0.175692 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 201 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 273 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 281 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 234 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.307790 	for  omega_b
+           0.622151 	for  omega_m
+           0.302019 	for  100*theta_s
+           0.288140 	for  ln10^{10}A_s
+           0.102072 	for  n_s
+           0.052700 	for  tau_reio
+           0.252031 	for  Omega_Lambda
+           0.321609 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 19 points of burn-in, and first 50 percent, keep 238 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 351 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 347 steps
+                                                               2026-02-07_300030__1.txt: Removed 23 points of burn-in, and first 50 percent, keep 301 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 19 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.408891 	for  omega_b
+           0.954800 	for  omega_m
+           0.460498 	for  100*theta_s
+           0.301315 	for  ln10^{10}A_s
+           0.227542 	for  n_s
+           0.121446 	for  tau_reio
+           0.355454 	for  Omega_Lambda
+           0.446292 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 273 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 421 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 420 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 364 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.608465 	for  omega_b
+           0.894902 	for   /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__2.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 155 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 186 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 203 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 145 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.291077 	for  omega_b
+           1.434071 	for  omega_m
+           0.282632 	for  100*theta_s
+           1.052687 	for  ln10^{10}A_s
+           0.654828 	for  n_s
+           0.033890 	for  tau_reio
+           0.396804 	for  Omega_Lambda
+           0.229030 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 222 steps
+                                                               2026-02-07_300030__2.txt: Removed 37 points of burn-in, and first 50 percent, keep 233 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.148727 	for  omega_b
+           0.325511 	for  omega_m
+           0.185417 	for  100*theta_s
+           0.488997 	for  ln10^{10}A_s
+           0.233304 	for  n_s
+           0.030934 	for  tau_reio
+           0.158328 	for  Omega_Lambda
+           0.157645 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 211 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 288 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 298 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 252 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.303443 	for  omega_b
+           0.699846 	for  omega_m
+           0.288910 	for  100*theta_s
+           0.311099 	for  ln10^{10}A_s
+           0.113172 	for  n_s
+           0.055047 	for  tau_reio
+           0.228542 	for  Omega_Lambda
+           0.322480 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 19 points of burn-in, and first 50 percent, keep 245 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 366 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 364 steps
+                                                               2026-02-07_300030__1.txt: Removed 23 points of burn-in, and first 50 percent, keep 310 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 19 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.426202 	for  omega_b
+           0.995146 	for  omega_m
+           0.478284 	for  100*theta_s
+           0.309512 	for  ln10^{10}A_s
+           0.239274 	for  n_s
+           0.131800 	for  tau_reio
+           0.379775 	for  Omega_Lambda
+           0.461533 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 282 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 434 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 445 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 380 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 155 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 186 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 205 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 145 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.268040 	for  omega_b
+           1.412697 	for  omega_m
+           0.283562 	for  100*theta_s
+           1.059030 	for  ln10^{10}A_s
+           0.623041 	for  n_s
+           0.033213 	for  tau_reio
+           0.362830 	for  Omega_Lambda
+           0.222643 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 224 steps
+                                                               2026-02-07_300030__2.txt: Removed 37 points of burn-in, and first 50 percent, keep 233 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.140554 	for  omega_b
+           0.322096 	for  omega_m
+           0.184401 	for  100*theta_s
+           0.487124 	for  ln10^{10}A_s
+           0.232223 	for  n_s
+           0.031019 	for  tau_reio
+           0.147915 	for  Omega_Lambda
+           0.153382 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 214 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 291 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 298 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 252 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.304986 	for  omega_b
+           0.712330 	for  omega_m
+           0.289869 	for  100*theta_s
+           0.315440 	for  ln10^{10}A_s
+           0.118039 	for  n_s
+           0.057842 	for  tau_reio
+           0.230037 	for  Omega_Lambda
+           0.323685 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 19 points of burn-in, and first 50 percent, keep 248 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 368 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 367 steps
+                                                               2026-02-07_300030__1.txt: Removed 23 points of burn-in, and first 50 percent, keep 316 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 19 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.436974 	for  omega_b
+           1.041615 	for  omega_m
+           0.486845 	for  100*theta_s
+           0.275612 	for  ln10^{10}A_s
+           0.224417 	for  n_s
+           0.125423 	for  tau_reio
+           0.391716 	for  Omega_Lambda
+           0.470929 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 282 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 440 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 445 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 385 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__2.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 155 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 191 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 205 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 147 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.252788 	for  omega_b
+           1.386935 	for  omega_m
+           0.267037 	for  100*theta_s
+           1.014328 	for  ln10^{10}A_s
+           0.450481 	for  n_s
+           0.032207 	for  tau_reio
+           0.349114 	for  Omega_Lambda
+           0.208112 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 178 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 227 steps
+                                                               2026-02-07_300030__2.txt: Removed 37 points of burn-in, and first 50 percent, keep 238 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.182842 	for  omega_b
+           0.316534 	for  omega_m
+           0.221550 	for  100*theta_s
+           0.472613 	for  ln10^{10}A_s
+           0.217760 	for  n_s
+           0.036798 	for  tau_reio
+           0.173654 	for  Omega_Lambda
+           0.194284 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 214 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 293 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 303 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 254 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.312468 	for  omega_b
+           0.729436 	for  omega_m
+           0.302855 	for  100*theta_s
+           0.317180 	for  ln10^{10}A_s
+           0.116480 	for  n_s
+           0.056837 	for  tau_reio
+           0.235337 	for  Omega_Lambda
+           0.333885 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 19 points of burn-in, and first 50 percent, keep 248 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 371 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 367 steps
+                                                               2026-02-07_300030__1.txt: Removed 23 points of burn-in, and first 50 percent, keep 316 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 19 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.436188 	for  omega_b
+           1.054905 	for  omega_m
+           0.487066 	for  100*theta_s
+           0.278908 	for  ln10^{10}A_s
+           0.226060 	for  n_s
+           0.126294 	for  tau_reio
+           0.390988 	for  Omega_Lambda
+           0.470263 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 284 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 440 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 445 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 385 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__4.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 155 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 191 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 205 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 147 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.252788 	for  omega_b
+           1.386935 	for  omega_m
+           0.267037 	for  100*theta_s
+           1.014328 	for  ln10^{10}A_s
+           0.450481 	for  n_s
+           0.032207 	for  tau_reio
+           0.349114 	for  Omega_Lambda
+           0.208112 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 178 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 227 steps
+                                                               2026-02-07_300030__2.txt: Removed 37 points of burn-in, and first 50 percent, keep 238 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 175 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.182842 	for  omega_b
+           0.316534 	for  omega_m
+           0.221550 	for  100*theta_s
+           0.472613 	for  ln10^{10}A_s
+           0.217760 	for  n_s
+           0.036798 	for  tau_reio
+           0.173654 	for  Omega_Lambda
+           0.194284 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 214 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 296 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 303 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 254 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.312993 	for  omega_b
+           0.741387 	for  omega_m
+           0.303627 	for  100*theta_s
+           0.329614 	for  ln10^{10}A_s
+           0.118512 	for  n_s
+           0.057630 	for  tau_reio
+           0.235906 	for  Omega_Lambda
+           0.334443 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 247 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 369 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 372 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 320 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.489843 	for  omega_b
+           1.079850 	for  omega_m
+           0.537192 	for  100*theta_s
+           0.267056 	for  ln10^{10}A_s
+           0.231735 	for  n_s
+           0.131783 	for  tau_reio
+           0.439802 	for  Omega_Lambda
+           0.524886 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 287 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 442 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 450 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 387 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__4.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 16 points of burn-in, and first 50 percent, keep 160 steps
+                                                               2026-02-07_300030__4.txt: Removed 44 points of burn-in, and first 50 percent, keep 196 steps
+                                                               2026-02-07_300030__2.txt: Removed 30 points of burn-in, and first 50 percent, keep 216 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 152 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 16 points of burn-in, and first 50 percent, keep 3 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.226854 	for  omega_b
+           1.184898 	for  omega_m
+           0.283000 	for  100*theta_s
+           1.083392 	for  ln10^{10}A_s
+           0.348820 	for  n_s
+           0.023347 	for  tau_reio
+           0.297603 	for  Omega_Lambda
+           0.215707 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 178 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 229 steps
+                                                               2026-02-07_300030__2.txt: Removed 49 points of burn-in, and first 50 percent, keep 237 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 182 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.197400 	for  omega_b
+           0.377600 	for  omega_m
+           0.232071 	for  100*theta_s
+           0.496765 	for  ln10^{10}A_s
+           0.215006 	for  n_s
+           0.035149 	for  tau_reio
+           0.182950 	for  Omega_Lambda
+           0.209482 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 214 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 301 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 308 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 262 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.327604 	for  omega_b
+           0.779998 	for  omega_m
+           0.325912 	for  100*theta_s
+           0.311068 	for  ln10^{10}A_s
+           0.110694 	for  n_s
+           0.056768 	for  tau_reio
+           0.254980 	for  Omega_Lambda
+           0.350622 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 251 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 372 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 380 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 325 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.476697 	for  omega_b
+           1.066740 	for  omega_m
+           0.520575 	for  100*theta_s
+           0.259682 	for  ln10^{10}A_s
+           0.238784 	for  n_s
+           0.135592 	for  tau_reio
+           0.432139 	for  Omega_Lambda
+           0.508223 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 289 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 451 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 460 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 392 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Your code location in the log.param file is in contradiction with your
+     .conf file. I will use the one from log.param.
+ /!\ CLASS set to version f7f40476fb003944b3940c5d582b168d81f30864, wrt. the one
+     used in the log.param: fc56acbfbdefd481a3e330b68b565746055046d6.
+Creating /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__1.txt
+
+rank =  0
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 180 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 234 steps
+                                                               2026-02-07_300030__2.txt: Removed 49 points of burn-in, and first 50 percent, keep 239 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 185 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.228123 	for  omega_b
+           0.388306 	for  omega_m
+           0.276943 	for  100*theta_s
+           0.477430 	for  ln10^{10}A_s
+           0.181271 	for  n_s
+           0.033778 	for  tau_reio
+           0.197322 	for  Omega_Lambda
+           0.247651 	for  H0
+--> Computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 17 points of burn-in, and first 50 percent, keep 199 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 268 steps
+                                                               2026-02-07_300030__2.txt: Removed 60 points of burn-in, and first 50 percent, keep 276 steps
+                                                               2026-02-07_300030__1.txt: Removed 22 points of burn-in, and first 50 percent, keep 227 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 17 points of burn-in, and first 50 percent, keep 2 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.310961 	for  omega_b
+           0.601005 	for  omega_m
+           0.315976 	for  100*theta_s
+           0.313376 	for  ln10^{10}A_s
+           0.105250 	for  n_s
+           0.048361 	for  tau_reio
+           0.257862 	for  Omega_Lambda
+           0.326971 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 19 points of burn-in, and first 50 percent, keep 235 steps
+                                                               2026-02-07_300030__4.txt: Removed 50 points of burn-in, and first 50 percent, keep 346 steps
+                                                               2026-02-07_300030__2.txt: Removed 83 points of burn-in, and first 50 percent, keep 342 steps
+                                                               2026-02-07_300030__1.txt: Removed 23 points of burn-in, and first 50 percent, keep 296 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 19 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.416513 	for  omega_b
+           0.922645 	for  omega_m
+           0.468796 	for  100*theta_s
+           0.304602 	for  ln10^{10}A_s
+           0.225460 	for  n_s
+           0.122255 	for  tau_reio
+           0.361121 	for  Omega_Lambda
+           0.455246 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 271 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 419 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 415 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 358 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.583687 	for  omega_b
+           0.923480 	for  omega_m
+           0.589009 	for  100*theta_s
+           0.286715 	for  ln10^{10}A_s
+           0.270366 	for  n_s
+           0.174509 	for  tau_reio
+           0.536038 	for  Omega_Lambda
+           0.600888 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 312 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 498 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 505 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 431 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.671795 	for  omega_b
+           0.869620 	for  omega_m
+           0.643233 	for  100*theta_s
+           0.376983 	for  ln10^{10}A_s
+           0.293756 	for  n_s
+           0.213764 	for  tau_reio
+           0.626895 	for  Omega_Lambda
+           0.675406 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 332 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 538 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 542 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 458 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.308509 	for  omega_b
+           0.703628 	for  omega_m
+           1.090967 	for  100*theta_s
+           0.408285 	for  ln10^{10}A_s
+           0.503590 	for  n_s
+           0.419591 	for  tau_reio
+           1.174771 	for  Omega_Lambda
+           1.284967 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 350 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 581 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 569 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 490 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.492827 	for  omega_b
+           0.508531 	for  omega_m
+           1.228914 	for  100*theta_s
+           0.278442 	for  ln10^{10}A_s
+           0.542381 	for  n_s
+           0.467057 	for  tau_reio
+           1.372329 	for  Omega_Lambda
+           1.464098 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 358 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 610 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 604 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 521 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.025087 	for  omega_b
+           0.295684 	for  omega_m
+           0.987735 	for  100*theta_s
+           0.203859 	for  ln10^{10}A_s
+           0.351882 	for  n_s
+           0.316394 	for  tau_reio
+           1.097959 	for  Omega_Lambda
+           1.028966 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 376 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 685 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 681 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 598 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.744475 	for  omega_b
+           0.194733 	for  omega_m
+           0.649958 	for  100*theta_s
+           0.073194 	for  ln10^{10}A_s
+           0.240947 	for  n_s
+           0.233558 	for  tau_reio
+           0.771664 	for  Omega_Lambda
+           0.750027 	for  H0
+Launcher: Job 8 completed in 484 seconds.
+Launcher: Task 7 done. Exiting.
+omega_m
+           0.611081 	for  100*theta_s
+           0.283364 	for  ln10^{10}A_s
+           0.288527 	for  n_s
+           0.187280 	for  tau_reio
+           0.559301 	for  Omega_Lambda
+           0.626057 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 314 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 498 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 507 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 436 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.977171 	for  omega_b
+           0.791227 	for  omega_m
+           0.854784 	for  100*theta_s
+           0.422169 	for  ln10^{10}A_s
+           0.435521 	for  n_s
+           0.353687 	for  tau_reio
+           0.863886 	for  Omega_Lambda
+           0.976241 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 334 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 543 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 542 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 461 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.324753 	for  omega_b
+           0.701875 	for  omega_m
+           1.116541 	for  100*theta_s
+           0.406011 	for  ln10^{10}A_s
+           0.500513 	for  n_s
+           0.419029 	for  tau_reio
+           1.201429 	for  Omega_Lambda
+           1.301885 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 350 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 581 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 569 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 490 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.492827 	for  omega_b
+           0.508531 	for  omega_m
+           1.228914 	for  100*theta_s
+           0.278442 	for  ln10^{10}A_s
+           0.542381 	for  n_s
+           0.467057 	for  tau_reio
+           1.372329 	for  Omega_Lambda
+           1.464098 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 366 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 646 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 646 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 552 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.845305 	for  omega_b
+           0.176017 	for  omega_m
+           0.758130 	for  100*theta_s
+           0.080807 	for  ln10^{10}A_s
+           0.241885 	for  n_s
+           0.229470 	for  tau_reio
+           0.894379 	for  Omega_Lambda
+           0.851439 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 391 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 720 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 714 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 623 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.600290 	for  omega_b
+           0.252390 	for  omega_m
+           0.571206 	for  100*theta_s
+           0.082063 	for  ln10^{10}A_s
+           0.236433 	for  n_s
+           0.231815 	for  tau_reio
+           0.665926 	for  Omega_Lambda
+           0.607380 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 427 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.636870 	for  omega_b
+           0.880366 	for  omega_m
+           0.625787 	for  100*theta_s
+           0.342777 	for  ln10^{10}A_s
+           0.296849 	for  n_s
+           0.207362 	for  tau_reio
+           0.596549 	for  Omega_Lambda
+           0.645852 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 324 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 526 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 527 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 453 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.162395 	for  omega_b
+           0.739577 	for  omega_m
+           0.990241 	for  100*theta_s
+           0.388043 	for  ln10^{10}A_s
+           0.509701 	for  n_s
+           0.417298 	for  tau_reio
+           1.039133 	for  Omega_Lambda
+           1.150144 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 342 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 568 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 557 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 478 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.453851 	for  omega_b
+           0.571480 	for  omega_m
+           1.213218 	for  100*theta_s
+           0.296125 	for  ln10^{10}A_s
+           0.541657 	for  n_s
+           0.460786 	for  tau_reio
+           1.325713 	for  Omega_Lambda
+           1.429093 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 355 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 600 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 592 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 510 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.175580 	for  omega_b
+           0.359506 	for  omega_m
+           1.060634 	for  100*theta_s
+           0.245749 	for  ln10^{10}A_s
+           0.409723 	for  n_s
+           0.362063 	for  tau_reio
+           1.189314 	for  Omega_Lambda
+           1.167855 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 374 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 672 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 669 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 581 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.784212 	for  omega_b
+           0.184509 	for  omega_m
+           0.685495 	for  100*theta_s
+           0.068634 	for  ln10^{10}A_s
+           0.244147 	for  n_s
+           0.235188 	for  tau_reio
+           0.812652 	for  Omega_Lambda
+           0.791976 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 399 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 732 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 726 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 638 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.521334 	for  omega_b
+           0.252959 	for  omega_m
+           0.517299 	for  100*theta_s
+           0.075836 	for  ln10^{10}A_s
+           0.226705 	for  n_s
+           0.222573 	for  tau_reio
+           0.595492 	for  Omega_Lambda
+           0.528358 	for  H0
+--> Computing covariance matrix
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.621174 	for  omega_b
+           0.912052 	for  omega_m
+           0.611963 	for  100*theta_s
+           0.351481 	for  ln10^{10}A_s
+           0.300494 	for  n_s
+           0.206584 	for  tau_reio
+           0.577626 	for  Omega_Lambda
+           0.631541 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 324 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 523 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 525 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 453 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.140249 	for  omega_b
+           0.747450 	for  omega_m
+           0.976127 	for  100*theta_s
+           0.384461 	for  ln10^{10}A_s
+           0.504569 	for  n_s
+           0.412549 	for  tau_reio
+           1.022799 	for  Omega_Lambda
+           1.129521 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 342 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 563 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 552 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 475 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.423427 	for  omega_b
+           0.615534 	for  omega_m
+           1.204431 	for  100*theta_s
+           0.313970 	for  ln10^{10}A_s
+           0.543017 	for  n_s
+           0.461052 	for  tau_reio
+           1.308189 	for  Omega_Lambda
+           1.401391 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 355 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 600 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 587 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 505 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.205783 	for  omega_b
+           0.397935 	for  omega_m
+           1.085112 	for  100*theta_s
+           0.268142 	for  ln10^{10}A_s
+           0.423163 	for  n_s
+           0.373583 	for  tau_reio
+           1.216134 	for  Omega_Lambda
+           1.196146 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 371 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 667 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 666 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 575 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.793130 	for  omega_b
+           0.166896 	for  omega_m
+           0.694052 	for  100*theta_s
+           0.071667 	for  ln10^{10}A_s
+           0.226042 	for  n_s
+           0.217592 	for  tau_reio
+           0.828738 	for  Omega_Lambda
+           0.800971 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 401 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 737 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 731 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 638 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.529723 	for  omega_b
+           0.242970 	for  omega_m
+           0.519571 	for  100*theta_s
+           0.069935 	for  ln10^{10}A_s
+           0.219074 	for  n_s
+           0.215169 	for  tau_reio
+           0.602433 	for  Omega_Lambda
+           0.538474 	for  H0
+--> Computing covariance matrix
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.634689 	for  omega_b
+           0.879990 	for  omega_m
+           0.624846 	for  100*theta_s
+           0.342496 	for  ln10^{10}A_s
+           0.300555 	for  n_s
+           0.209326 	for  tau_reio
+           0.594382 	for  Omega_Lambda
+           0.644127 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 324 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 526 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 527 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 453 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.162395 	for  omega_b
+           0.739577 	for  omega_m
+           0.990241 	for  100*theta_s
+           0.388043 	for  ln10^{10}A_s
+           0.509701 	for  n_s
+           0.417298 	for  tau_reio
+           1.039133 	for  Omega_Lambda
+           1.150144 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 342 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 571 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 557 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 478 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.449624 	for  omega_b
+           0.573992 	for  omega_m
+           1.211124 	for  100*theta_s
+           0.296976 	for  ln10^{10}A_s
+           0.541334 	for  n_s
+           0.460467 	for  tau_reio
+           1.322450 	for  Omega_Lambda
+           1.425013 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 358 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 605 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 592 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 510 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.116593 	for  omega_b
+           0.365650 	for  omega_m
+           1.034569 	for  100*theta_s
+           0.239660 	for  ln10^{10}A_s
+           0.399679 	for  n_s
+           0.355798 	for  tau_reio
+           1.158459 	for  Omega_Lambda
+           1.110393 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 374 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 670 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 666 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 581 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.785366 	for  omega_b
+           0.184975 	for  omega_m
+           0.688109 	for  100*theta_s
+           0.069594 	for  ln10^{10}A_s
+           0.246610 	for  n_s
+           0.237054 	for  tau_reio
+           0.815484 	for  Omega_Lambda
+           0.793040 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 401 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 737 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 731 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 640 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.496471 	for  omega_b
+           0.243192 	for  omega_m
+           0.493411 	for  100*theta_s
+           0.067220 	for  ln10^{10}A_s
+           0.217816 	for  n_s
+           0.213869 	for  tau_reio
+           0.566971 	for  Omega_Lambda
+           0.504066 	for  H0
+--> Computing covariance matrix
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.643971 	for  omega_b
+           0.902887 	for  omega_m
+           0.626023 	for  100*theta_s
+           0.362139 	for  ln10^{10}A_s
+           0.293623 	for  n_s
+           0.209448 	for  tau_reio
+           0.600859 	for  Omega_Lambda
+           0.650320 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 329 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 531 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 532 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 456 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.219108 	for  omega_b
+           0.712117 	for  omega_m
+           1.032127 	for  100*theta_s
+           0.399428 	for  ln10^{10}A_s
+           0.512422 	for  n_s
+           0.421975 	for  tau_reio
+           1.095080 	for  Omega_Lambda
+           1.203213 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 344 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 573 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 560 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 485 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.434303 	for  omega_b
+           0.565733 	for  omega_m
+           1.201689 	for  100*theta_s
+           0.284275 	for  ln10^{10}A_s
+           0.545003 	for  n_s
+           0.464590 	for  tau_reio
+           1.313913 	for  Omega_Lambda
+           1.410129 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 355 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 600 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 592 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 508 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.161574 	for  omega_b
+           0.367022 	for  omega_m
+           1.044175 	for  100*theta_s
+           0.256816 	for  ln10^{10}A_s
+           0.403887 	for  n_s
+           0.357611 	for  tau_reio
+           1.172009 	for  Omega_Lambda
+           1.153409 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 374 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 672 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 669 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 581 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.784212 	for  omega_b
+           0.184509 	for  omega_m
+           0.685495 	for  100*theta_s
+           0.068634 	for  ln10^{10}A_s
+           0.244147 	for  n_s
+           0.235188 	for  tau_reio
+           0.812652 	for  Omega_Lambda
+           0.791976 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 401 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 737 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 734 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 643 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.502280 	for  omega_b
+           0.240081 	for  omega_m
+           0.498844 	for  100*theta_s
+           0.070135 	for  ln10^{10}A_s
+           0.217468 	for  n_s
+           0.213371 	for  tau_reio
+           0.575257 	for  Omega_Lambda
+           0.510104 	for  H0
+--> Computing covariance matrix
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.973330 	for  omega_b
+           0.799052 	for  omega_m
+           0.855297 	for  100*theta_s
+           0.429045 	for  ln10^{10}A_s
+           0.417884 	for  n_s
+           0.338392 	for  tau_reio
+           0.863205 	for  Omega_Lambda
+           0.972755 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 350 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 578 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 567 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 488 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.458647 	for  omega_b
+           0.509669 	for  omega_m
+           1.201471 	for  100*theta_s
+           0.280022 	for  ln10^{10}A_s
+           0.536119 	for  n_s
+           0.460611 	for  tau_reio
+           1.337161 	for  Omega_Lambda
+           1.431013 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 358 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 610 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 604 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 518 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.015699 	for  omega_b
+           0.298525 	for  omega_m
+           0.975052 	for  100*theta_s
+           0.209122 	for  ln10^{10}A_s
+           0.351546 	for  n_s
+           0.316312 	for  tau_reio
+           1.083725 	for  Omega_Lambda
+           1.019299 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 366 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 644 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 644 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 550 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.847351 	for  omega_b
+           0.176465 	for  omega_m
+           0.765080 	for  100*theta_s
+           0.076668 	for  ln10^{10}A_s
+           0.236690 	for  n_s
+           0.224491 	for  tau_reio
+           0.901686 	for  Omega_Lambda
+           0.853904 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 386 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 712 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 709 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 618 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.598518 	for  omega_b
+           0.242420 	for  omega_m
+           0.565602 	for  100*theta_s
+           0.079813 	for  ln10^{10}A_s
+           0.234422 	for  n_s
+           0.229685 	for  tau_reio
+           0.656486 	for  Omega_Lambda
+           0.605934 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 422 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 761 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 771 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 678 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.397945 	for  omega_b
+           0.212744 	for  omega_m
+           0.401278 	for  100*theta_s
+           0.054998 	for  ln10^{10}A_s
+           0.159568 	for  n_s
+           0.157666 	for  tau_reio
+           0.466955 	for  Omega_Lambda
+           0.405892 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 437 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 771 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 797 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 710 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.315756 	for  omega_b
+           0.191056 	for  omega_m
+           0.316183 	for  100*theta_s
+           0.059111 	for  ln10^{10}A_s
+           0.106846 	for  n_s
+           0.106405 	for  tau_reio
+           0.371070 	for  Omega_Lambda
+           0.321738 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 473 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 785 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 863 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 777 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.202824 	for  omega_b
+           0.235979 	for  omega_m
+           0.237078 	for  100*theta_s
+           0.117839 	for  ln10^{10}A_s
+           0.083424 	for  n_s
+           0.083239 	for  tau_reio
+           0.231587 	for  Omega_Lambda
+           0.204940 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 491 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 790 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 895 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 797 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.160331 	for  omega_b
+           0.296781 	for  omega_m
+           0.229827 	for  100*theta_s
+           0.156919 	for  ln10^{10}A_s
+           0.110570 	for  n_s
+           0.109595 	for  tau_reio
+           0.179527 	for  Omega_Lambda
+           0.162948 	for  H0
+--> Not computing covariance matrix
+Launcher: Job 6 completed in 607 seconds.
+Launcher: Task 1 done. Exiting.
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 764 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 778 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 690 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.360212 	for  omega_b
+           0.200293 	for  omega_m
+           0.362087 	for  100*theta_s
+           0.051947 	for  ln10^{10}A_s
+           0.137603 	for  n_s
+           0.136632 	for  tau_reio
+           0.420698 	for  Omega_Lambda
+           0.367788 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 466 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 780 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 843 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 765 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.217003 	for  omega_b
+           0.206200 	for  omega_m
+           0.236738 	for  100*theta_s
+           0.094312 	for  ln10^{10}A_s
+           0.072725 	for  n_s
+           0.072769 	for  tau_reio
+           0.249326 	for  Omega_Lambda
+           0.218839 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 483 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 787 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 880 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 785 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.181636 	for  omega_b
+           0.271280 	for  omega_m
+           0.232862 	for  100*theta_s
+           0.151202 	for  ln10^{10}A_s
+           0.092897 	for  n_s
+           0.092491 	for  tau_reio
+           0.202116 	for  Omega_Lambda
+           0.184568 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 496 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 792 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 900 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 802 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.148822 	for  omega_b
+           0.319268 	for  omega_m
+           0.231370 	for  100*theta_s
+           0.162163 	for  ln10^{10}A_s
+           0.118301 	for  n_s
+           0.117094 	for  tau_reio
+           0.167273 	for  Omega_Lambda
+           0.151646 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 516 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 815 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 916 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 830 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.084204 	for  omega_b
+           0.432585 	for  omega_m
+           0.252118 	for  100*theta_s
+           0.206008 	for  ln10^{10}A_s
+           0.197457 	for  n_s
+           0.195274 	for  tau_reio
+           0.100518 	for  Omega_Lambda
+           0.085623 	for  H0
+Launcher: Job 1 completed in 650 seconds.
+Launcher: Task 2 done. Exiting.
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 441 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 772 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 797 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 715 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.314567 	for  omega_b
+           0.186127 	for  omega_m
+           0.311880 	for  100*theta_s
+           0.060805 	for  ln10^{10}A_s
+           0.098449 	for  n_s
+           0.098275 	for  tau_reio
+           0.369480 	for  Omega_Lambda
+           0.320131 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 476 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 785 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 865 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 780 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.194574 	for  omega_b
+           0.248064 	for  omega_m
+           0.231367 	for  100*theta_s
+           0.138133 	for  ln10^{10}A_s
+           0.086172 	for  n_s
+           0.085913 	for  tau_reio
+           0.215854 	for  Omega_Lambda
+           0.196598 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 493 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 790 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 898 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 802 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.160223 	for  omega_b
+           0.312044 	for  omega_m
+           0.238667 	for  100*theta_s
+           0.160418 	for  ln10^{10}A_s
+           0.120959 	for  n_s
+           0.119736 	for  tau_reio
+           0.182204 	for  Omega_Lambda
+           0.163185 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 506 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 800 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 909 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 817 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.108345 	for  omega_b
+           0.378831 	for  omega_m
+           0.237239 	for  100*theta_s
+           0.187830 	for  ln10^{10}A_s
+           0.157188 	for  n_s
+           0.155406 	for  tau_reio
+           0.129088 	for  Omega_Lambda
+           0.110117 	for  H0
+--> Not computing covariance matrix
+Launcher: Job 2 completed in 659 seconds.
+Launcher: Task 4 done. Exiting.
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 461 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 780 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 835 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 757 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.227990 	for  omega_b
+           0.199202 	for  omega_m
+           0.242473 	for  100*theta_s
+           0.090083 	for  ln10^{10}A_s
+           0.068643 	for  n_s
+           0.068759 	for  tau_reio
+           0.262278 	for  Omega_Lambda
+           0.230111 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 493 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 792 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 898 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 802 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.160782 	for  omega_b
+           0.311972 	for  omega_m
+           0.237557 	for  100*theta_s
+           0.165680 	for  ln10^{10}A_s
+           0.121303 	for  n_s
+           0.120008 	for  tau_reio
+           0.181428 	for  Omega_Lambda
+           0.163709 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 503 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 800 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 906 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 815 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.127241 	for  omega_b
+           0.357516 	for  omega_m
+           0.239323 	for  100*theta_s
+           0.179347 	for  ln10^{10}A_s
+           0.145234 	for  n_s
+           0.143623 	for  tau_reio
+           0.148037 	for  Omega_Lambda
+           0.129808 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 513 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 810 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 914 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 827 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.088615 	for  omega_b
+           0.420949 	for  omega_m
+           0.248391 	for  100*theta_s
+           0.204476 	for  ln10^{10}A_s
+           0.190711 	for  n_s
+           0.188580 	for  tau_reio
+           0.105767 	for  Omega_Lambda
+           0.090122 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 533 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 837 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 847 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.076177 	for  omega_b
+           0.495915 	for  omega_m
+           0.303500 	for  100*theta_s
+           0.256647 	for  ln10^{10}A_s
+           0.233512 	for  n_s
+           0.231606 	for  tau_reio
+           0.096774 	for  Omega_Lambda
+           0.077658 	for  H0
+Launcher: Job 5 completed in 682 seconds.
+Launcher: Task 0 done. Exiting.
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 441 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 772 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 799 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 715 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.317696 	for  omega_b
+           0.189016 	for  omega_m
+           0.314230 	for  100*theta_s
+           0.060413 	for  ln10^{10}A_s
+           0.099393 	for  n_s
+           0.099114 	for  tau_reio
+           0.372055 	for  Omega_Lambda
+           0.323276 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 476 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 785 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 868 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 780 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.193049 	for  omega_b
+           0.250408 	for  omega_m
+           0.232058 	for  100*theta_s
+           0.136932 	for  ln10^{10}A_s
+           0.084404 	for  n_s
+           0.084182 	for  tau_reio
+           0.214618 	for  Omega_Lambda
+           0.195420 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 493 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 790 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 898 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 802 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.160223 	for  omega_b
+           0.312044 	for  omega_m
+           0.238667 	for  100*theta_s
+           0.160418 	for  ln10^{10}A_s
+           0.120959 	for  n_s
+           0.119736 	for  tau_reio
+           0.182204 	for  Omega_Lambda
+           0.163185 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 506 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 800 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 909 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 817 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.108345 	for  omega_b
+           0.378831 	for  omega_m
+           0.237239 	for  100*theta_s
+           0.187830 	for  ln10^{10}A_s
+           0.157188 	for  n_s
+           0.155406 	for  tau_reio
+           0.129088 	for  Omega_Lambda
+           0.110117 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 528 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 830 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 845 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.077739 	for  omega_b
+           0.488489 	for  omega_m
+           0.295554 	for  100*theta_s
+           0.252435 	for  ln10^{10}A_s
+           0.235417 	for  n_s
+           0.233245 	for  tau_reio
+           0.096432 	for  Omega_Lambda
+           0.079312 	for  H0
+Launcher: Job 3 completed in 697 seconds.
+Launcher: Task 5 done. Exiting.
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 441 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 772 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 803 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 715 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.309631 	for  omega_b
+           0.186555 	for  omega_m
+           0.308411 	for  100*theta_s
+           0.059426 	for  ln10^{10}A_s
+           0.101838 	for  n_s
+           0.101437 	for  tau_reio
+           0.364823 	for  Omega_Lambda
+           0.314891 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 476 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 785 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 863 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 777 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.199742 	for  omega_b
+           0.238550 	for  omega_m
+           0.232801 	for  100*theta_s
+           0.136175 	for  ln10^{10}A_s
+           0.080429 	for  n_s
+           0.080271 	for  tau_reio
+           0.224019 	for  Omega_Lambda
+           0.201698 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 491 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 790 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 895 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 797 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.160331 	for  omega_b
+           0.296781 	for  omega_m
+           0.229827 	for  100*theta_s
+           0.156919 	for  ln10^{10}A_s
+           0.110570 	for  n_s
+           0.109595 	for  tau_reio
+           0.179527 	for  Omega_Lambda
+           0.162948 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 503 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 800 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 906 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 815 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.127241 	for  omega_b
+           0.357516 	for  omega_m
+           0.239323 	for  100*theta_s
+           0.179347 	for  ln10^{10}A_s
+           0.145234 	for  n_s
+           0.143623 	for  tau_reio
+           0.148037 	for  Omega_Lambda
+           0.129808 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 528 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 827 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 842 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.077374 	for  omega_b
+           0.485073 	for  omega_m
+           0.289702 	for  100*theta_s
+           0.245345 	for  ln10^{10}A_s
+           0.231853 	for  n_s
+           0.229667 	for  tau_reio
+           0.095718 	for  Omega_Lambda
+           0.078894 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 860 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.076453 	for  omega_b
+           0.480556 	for  omega_m
+           0.304016 	for  100*theta_s
+           0.237827 	for  ln10^{10}A_s
+           0.217956 	for  n_s
+           0.216606 	for  tau_reio
+           0.098689 	for  Omega_Lambda
+           0.077779 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 891 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.078173 	for  omega_b
+           0.459410 	for  omega_m
+           0.294341 	for  100*theta_s
+           0.213540 	for  ln10^{10}A_s
+           0.211703 	for  n_s
+           0.210684 	for  tau_reio
+           0.099974 	for  Omega_Lambda
+           0.079405 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.078396 	for  omega_b
+           0.450855 	for  omega_m
+           0.290178 	for  100*theta_s
+           0.192122 	for  ln10^{10}A_s
+           0.235738 	for  n_s
+           0.234705 	for  tau_reio
+           0.100694 	for  Omega_Lambda
+           0.079606 	for  H0
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 928 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.078666 	for  omega_b
+           0.401947 	for  omega_m
+           0.275597 	for  100*theta_s
+           0.202563 	for  ln10^{10}A_s
+           0.211865 	for  n_s
+           0.210957 	for  tau_reio
+           0.099914 	for  Omega_Lambda
+           0.079838 	for  H0
+--> Computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 942 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.077361 	for  omega_b
+           0.374387 	for  omega_m
+           0.267675 	for  100*theta_s
+           0.215300 	for  ln10^{10}A_s
+           0.186980 	for  n_s
+           0.186202 	for  tau_reio
+           0.098043 	for  Omega_Lambda
+           0.078566 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 962 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.074010 	for  omega_b
+           0.340089 	for  omega_m
+           0.259452 	for  100*theta_s
+           0.240957 	for  ln10^{10}A_s
+           0.089718 	for  n_s
+           0.089502 	for  tau_reio
+           0.092376 	for  Omega_Lambda
+           0.075240 	for  H0
+--> Not computing covariance matrix
+--> Scanning file /scratch/09218/gab97/chains/desi_dr2_lcdm_v1/2026-02-07_300030__3.txt: Removed 20 points of burn-in, and first 50 percent, keep 540 steps
+                                                               2026-02-07_300030__4.txt: Removed 58 points of burn-in, and first 50 percent, keep 982 steps
+                                                               2026-02-07_300030__2.txt: Removed 100 points of burn-in, and first 50 percent, keep 921 steps
+                                                               2026-02-07_300030__1.txt: Removed 24 points of burn-in, and first 50 percent, keep 849 steps
+                                                               2026-02-07_30__4.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__3.txt    : Removed 20 points of burn-in, and first 50 percent, keep 1 steps
+                                                               2026-02-07_30__1.txt    : Removed everything: chain not converged
+                                                               2026-02-07_30__2.txt    : Removed everything: chain not converged
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.075986 	for  omega_b
+           0.350259 	for  omega_m
+           0.273253 	for  100*theta_s
+           0.280179 	for  ln10^{10}A_s
+           0.052396 	for  n_s
+           0.052318 	for  tau_reio
+           0.090391 	for  Omega_Lambda
+           0.077175 	for  H0
+--> Not computing covariance matrix
+Launcher: Job 4 completed in 959 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Done. Job exited without errors

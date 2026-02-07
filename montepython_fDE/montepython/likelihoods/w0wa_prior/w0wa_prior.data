@@ -1,0 +1,2 @@
+# Hard prior likelihood: enforce w0_fld + wa_fld < 0
+w0wa_prior.cutoff = 0

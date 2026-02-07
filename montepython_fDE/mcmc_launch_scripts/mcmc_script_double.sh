@@ -19,7 +19,7 @@ export OMP_NUM_THREADS=15
 export MONTEPYTHON="work/09218/gab97/ls6/fDE_cosmo/montepython_fDE/MontePython.py"
 export CHAIN_DIRECTORY=/scratch/09218/gab97/chains
 export CHAIN_NAME1=desi_dr2_lcdm_v1
-export CHAIN_NAME2=desi_dr2_lcdm_v1
+export CHAIN_NAME2=desi_dr2_w0wa_v2
 
 export PREVIOUS_NSAMPLES=30
 export PREVIOUS_NSAMPLES2=30
