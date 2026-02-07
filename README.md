@@ -48,3 +48,4 @@ These forms replace specifying (w0, wa) and instead directly parameterize rho_DE
 cd class_fDE
 make clean
 make
+pip install --ignore_installed --force_reinstall .
