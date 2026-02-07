@@ -1,0 +1,5 @@
+# mock DESI-like BAO data
+# model: exp
+mock_bao_desi_dr2_exp_20260207142533.data_directory      = data.path['data']
+mock_bao_desi_dr2_exp_20260207142533.data_file           = 'mock_bao_desi_dr2_exp_20260207142533/mock_bao_desi_dr2_exp_20260207142533_mean.txt'
+mock_bao_desi_dr2_exp_20260207142533.cov_file            = 'mock_bao_desi_dr2_exp_20260207142533/mock_bao_desi_dr2_exp_20260207142533_cov.txt'

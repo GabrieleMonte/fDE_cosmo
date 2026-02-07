@@ -1,0 +1,5 @@
+# mock DESI-like BAO data
+# model: hilltop
+mock_bao_desi_dr2_hilltop_20260207142206.data_directory      = data.path['data']
+mock_bao_desi_dr2_hilltop_20260207142206.data_file           = 'mock_bao_desi_dr2_hilltop_20260207142206/mock_bao_desi_dr2_hilltop_20260207142206_mean.txt'
+mock_bao_desi_dr2_hilltop_20260207142206.cov_file            = 'mock_bao_desi_dr2_hilltop_20260207142206/mock_bao_desi_dr2_hilltop_20260207142206_cov.txt'

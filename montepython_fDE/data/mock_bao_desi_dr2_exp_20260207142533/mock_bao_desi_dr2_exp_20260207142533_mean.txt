@@ -1,0 +1,17 @@
+# mock DESI-like BAO data
+# model: exp
+# Cosmological parameters: #   output = , #   h = 0.6821, #   A_s = 2.216e-09, #   n_s = 0.9686, #   omega_b = 0.02253, #   omega_cdm = 0.1177, #   tau_reio = 0.085, #   N_ur = 3.044, #   Omega_Lambda = 0.0, #   Omega_fld = 0.0, #   Omega_scf = -1, #   scf_parameters = 0.0,0.0,0.0,0.0,0.0,0.0, #   scf_tuning_index = 1, #   attractor_ic_scf = no, #   Lambda0_scf = 1.0, #   scf_potential = exponential, #   lambda_scf = 0.6, #   phi_i_scf = 0, 
+# [z] [value at z] [quantity]
+0.29500000 7.732351388714 DV_over_rs
+0.51000000 13.020121466936 DM_over_rs
+0.51000000 22.610600181438 DH_over_rs
+0.70600000 17.337877007979 DM_over_rs
+0.70600000 19.703601030611 DH_over_rs
+0.93400000 21.431693791515 DM_over_rs
+0.93400000 17.614041682884 DH_over_rs
+1.32100000 27.651191198838 DM_over_rs
+1.32100000 14.226342241217 DH_over_rs
+1.48400000 29.804712253781 DM_over_rs
+1.48400000 12.932318324485 DH_over_rs
+2.33000000 8.645904471004 DH_over_rs
+2.33000000 38.717409746867 DM_over_rs
