@@ -2,11 +2,11 @@
 #SBATCH -J launch_mcmc           # Job name
 #SBATCH -o sbatch_logs/out/launcher.o%j       # Name of stdout output file
 #SBATCH -e sbatch_logs/err/launcher.e%j       # Name of stderr error file
-#SBATCH -p normal          # Queue (partition) name
+#SBATCH -p development          # Queue (partition) name
 #SBATCH -N 1               # Total # of nodes (must be 1 for serial)
 #SBATCH -c 10
 #SBATCH -n 12               # Total # of mpi tasks (should be 1 for serial)
-#SBATCH -t 24:00:00        # Run time (hh:mm:ss)
+#SBATCH -t 02:00:00        # Run time (hh:mm:ss)
 #SBATCH --mail-type=all    # Send email at begin and end of job
 #SBATCH -A PHY23028       # Project/Allocation name (req'd if you have more than 1)
 #SBATCH --mail-user=montefalcone@utexas.edu
@@ -23,14 +23,14 @@ export CHAIN_NAME2=desi_dr2_w0wa_v1
 export CHAIN_NAME3=desi_dr2_noCMB_w0wa_v1
 
 
-export PREVIOUS_NSAMPLES=300030
-export PREVIOUS_NSAMPLES2=300030
-export PREVIOUS_NSAMPLES3=300030
+export PREVIOUS_NSAMPLES=1000030
+export PREVIOUS_NSAMPLES2=1000030
+export PREVIOUS_NSAMPLES3=1000030
 
 
-export NSAMPLES=300000
-export NSAMPLES2=300000
-export NSAMPLES3=300000
+export NSAMPLES=50000
+export NSAMPLES2=50000
+export NSAMPLES3=50000
 
 export PREVIOUS_CHAIN_FILE1=$(ls ${CHAIN_DIRECTORY}/${CHAIN_NAME1}/*${PREVIOUS_NSAMPLES}__1.txt)
 export PREVIOUS_CHAIN_FILE2=$(ls ${CHAIN_DIRECTORY}/${CHAIN_NAME2}/*${PREVIOUS_NSAMPLES2}__1.txt)
