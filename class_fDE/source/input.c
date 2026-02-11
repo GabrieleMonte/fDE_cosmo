@@ -3295,12 +3295,27 @@ int input_read_parameters_species(struct file_content * pfc,
         class_stop(errmsg,"incomprehensible input '%s' for the field 'fluid_equation_of_state'",string1);
       }
     }
-
+    double param10, param11;
+    int flag10,flag11;
     if (pba->fluid_equation_of_state == CLP) {
       /** 8.a.2.2) Equation of state of the fluid in 'CLP' case */
       /* Read */
       class_read_double("w0_fld",pba->w0_fld);
-      class_read_double("wa_fld",pba->wa_fld);
+      class_call(parser_read_double(pfc,"wa_fld",&param10,&flag10,errmsg),
+             errmsg,
+             errmsg);
+      class_call(parser_read_double(pfc,"w0wa_fld",&param11,&flag11,errmsg),
+             errmsg,
+             errmsg);
+      class_test(((flag10 == _TRUE_) && (flag11 == _TRUE_)) || ((flag10 == _FALSE_) && (flag11 == _FALSE_)),
+             errmsg,
+             "You must provide either 'wa_fld' or 'w0wa_fld' but no both");
+      if (flag10 == _TRUE_){
+		  pba->wa_fld = param10;
+	  }
+      else if (flag11 == _TRUE_){
+		  pba->wa_fld = param11-pba->w0_fld;
+	  }
       class_read_double("cs2_fld",pba->cs2_fld);
     }
     if (pba->fluid_equation_of_state == faDE) {
