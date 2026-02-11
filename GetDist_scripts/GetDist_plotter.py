@@ -11,8 +11,9 @@ smooth2D = 0.6
 
 
 file_name0='2026-02-10_50030_'
-desi_cmb_fa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_fa_v1/'+file_name0
-desi_cmb_w0wa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_w0wa_v1/'+file_name0
+file_name1='2026-02-10_100030_'
+desi_cmb_fa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_fa_v2/'+file_name1
+desi_cmb_w0wa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_w0wa_v2/'+file_name1
 desi_cmb_lcdm_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_lcdm_v1/'+file_name0
 
 
@@ -77,6 +78,5 @@ def save_posteriors(chain_sample,pars,pairs,name):
     return None
 save_posteriors(desi_cmb_w0wa_samples,pars_w0wa,pairs_w0wa,'desi_cmb_w0wa')
 save_posteriors(desi_cmb_fa_samples,pars_fa,pairs_fa,'desi_cmb_fa')
-save_posteriors(desi_cmb_w0wa_samples,pars_w0wa,pairs_w0wa,'desi_cmb_w0wa')
-save_posteriors(desi_cmb_lcdm_samples,pars_lcdm,pairs_lcdm,'desi_cmb_lcdm')
+#save_posteriors(desi_cmb_lcdm_samples,pars_lcdm,pairs_lcdm,'desi_cmb_lcdm')
 

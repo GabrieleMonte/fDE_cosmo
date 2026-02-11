@@ -1,0 +1,341 @@
+using /tmp/launcher.2920295.hostlist.gJ0q1x77 to get hosts
+starting job on c305-005
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:951) :error; input_fzerofun_1d(L:997) :error in input_try_unknown_parameters(&input, 1, pfzw, output, error_message);
+=>input_try_unknown_parameters(L:1399) :error in background_init(&pr,&ba);
+=>background_init(L:875) :error in background_solve(ppr,pba);
+=>background_solve(L:1957) :error in background_initial_conditions(ppr,pba,pvecback,pvecback_integration,&(loga_ini));
+=>background_initial_conditions(L:2347) :condition (fabs(pvecback[pba->index_bg_Omega_r]-1.) > ppr->tol_initial_Omega_r) is true; Omega_r = 9.998980e-01, not close enough to 1. Decrease a_ini_over_a_today_default in order to start from radiation domination.
+[c305-005:1970441:0:1970441] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970441) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000ff765 thermodynamics_reionization_evolve_with_tau()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/thermodynamics.c:2291
+ 4 0x00000000001071fc thermodynamics_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/thermodynamics.c:1656
+ 5 0x00000000001077ff thermodynamics_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/thermodynamics.c:404
+ 6 0x00000000000f00e6 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1409
+ 7 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 8 0x00000000000f0a17 input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:941
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970441 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 3 --silent
+[c305-005:1970542:0:1970542] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970542) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970542 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 4 --silent
+[c305-005:1970686:0:1970686] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970686) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970686 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 6 --silent
+[c305-005:1970440:0:1970440] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970440) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970440 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME2} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR2} --parallel-chains -r ${PREVIOUS_CHAIN_FILE2} --chain-number 2 --silent
+[c305-005:1970181:0:1970181] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970181) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970181 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 1 --silent
+[c305-005:1970317:0:1970317] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970317) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000cbc9d input_fzero_ridder()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1082
+ 8 0x00000000000f0b8c input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:963
+ 9 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+10 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+11 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+12 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+13 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+14 0x00000000002305bf call_function()  ???:0
+15 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+16 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+17 0x00000000002305bf call_function()  ???:0
+18 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+19 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+20 0x00000000002305bf call_function()  ???:0
+21 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+22 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+23 0x00000000002305bf call_function()  ???:0
+24 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+25 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+26 0x00000000002305bf call_function()  ???:0
+27 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+28 0x000000000022908f _PyEval_EvalCode()  ???:0
+29 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+30 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+31 0x0000000000147089 PyEval_EvalCode()  ???:0
+32 0x00000000001848d6 run_mod()  ???:0
+33 0x0000000000183f44 pyrun_file()  ???:0
+34 0x0000000000183bf4 pyrun_simple_file()  ???:0
+35 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+36 0x00000000001a077a pymain_run_file()  ???:0
+37 0x000000000019fe49 pymain_run_python()  ???:0
+38 0x000000000019fb81 Py_RunMain()  ???:0
+39 0x00000000001a0a48 Py_BytesMain()  ???:0
+40 0x000000000003a7e5 __libc_start_main()  ???:0
+41 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970317 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 2 --silent
+[c305-005:1970358:0:1970358] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x8)
+==== backtrace (tid:1970358) ====
+ 0 0x0000000000012d20 __funlockfile()  :0
+ 1 0x0000000000195ed3 numjac()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:1355
+ 2 0x0000000000197e4c evolver_ndf15()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../tools/evolver_ndf15.c:240
+ 3 0x00000000000f9710 background_solve()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:2003
+ 4 0x00000000000fa4d1 background_init()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/background.c:875
+ 5 0x00000000000efd09 input_try_unknown_parameters()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:1399
+ 6 0x00000000000f0939 input_fzerofun_1d()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:997
+ 7 0x00000000000f0a17 input_find_root()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:941
+ 8 0x00000000000f177b input_shooting()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:653
+ 9 0x00000000000f1ec4 input_read_from_file()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/build/../source/input.c:420
+10 0x0000000000034415 _INTERNAL97eaeb75::__pyx_pf_10classy_fDE_5Class_18compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7275
+11 0x0000000000033cee _INTERNAL97eaeb75::__pyx_pw_10classy_fDE_5Class_19compute()  /work/09218/gab97/ls6/fDE_cosmo/class_fDE/python/classy.cpp:7039
+12 0x00000000000a61d3 method_vectorcall_VARARGS_KEYWORDS()  ???:0
+13 0x00000000002305bf call_function()  ???:0
+14 0x000000000022a84a _PyEval_EvalFrameDefault()  ???:0
+15 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+16 0x00000000002305bf call_function()  ???:0
+17 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+18 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+19 0x00000000002305bf call_function()  ???:0
+20 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+21 0x00000000001f771d _PyFunction_Vectorcall()  ???:0
+22 0x00000000002305bf call_function()  ???:0
+23 0x000000000022a86d _PyEval_EvalFrameDefault()  ???:0
+24 0x00000000001f78e2 _PyFunction_Vectorcall()  ???:0
+25 0x00000000002305bf call_function()  ???:0
+26 0x000000000022bba6 _PyEval_EvalFrameDefault()  ???:0
+27 0x000000000022908f _PyEval_EvalCode()  ???:0
+28 0x0000000000147163 _PyEval_EvalCodeWithName()  ???:0
+29 0x00000000001470f2 PyEval_EvalCodeEx()  ???:0
+30 0x0000000000147089 PyEval_EvalCode()  ???:0
+31 0x00000000001848d6 run_mod()  ???:0
+32 0x0000000000183f44 pyrun_file()  ???:0
+33 0x0000000000183bf4 pyrun_simple_file()  ???:0
+34 0x0000000000183aaf PyRun_SimpleFileExFlags()  ???:0
+35 0x00000000001a077a pymain_run_file()  ???:0
+36 0x000000000019fe49 pymain_run_python()  ???:0
+37 0x000000000019fb81 Py_RunMain()  ???:0
+38 0x00000000001a0a48 Py_BytesMain()  ???:0
+39 0x000000000003a7e5 __libc_start_main()  ???:0
+40 0x000000000040107e _start()  ???:0
+=================================
+/opt/apps/launcher/3.10/launcher: line 97: 1970358 Segmentation fault      (core dumped) python ../montepython/MontePython.py run -o ${CHAIN_DIRECTORY}/${CHAIN_NAME1} --update 50 --superupdate 20 -N ${NSAMPLES} -f ${JUMPING_FACTOR1} --parallel-chains -r ${PREVIOUS_CHAIN_FILE1} --chain-number 5 --silent
+
+
+Error in Class: background_init(L:859) :condition (pba->shooting_failed == _TRUE_) is true; Shooting failed, try optimising input_get_guess(). Error message:
+
+input_shooting(L:653) :error in input_find_root(&xzero, &fevals, ppr->tol_shooting_deltax_rel, &fzw, errmsg);
+=>input_find_root(L:963) :error in input_fzero_ridder(input_fzerofun_1d, x1, x2, tol_x_rel*(((fabs(x1))<(fabs(x2))) ? (fabs(x2)) : (fabs(x1)) ), pfzw, &f1, &f2, xzero, fevals, errmsg);
+=>input_fzero_ridder(L:1118) :error; root must be bracketed in zriddr.
+slurmstepd: error: *** JOB 2920295 ON c305-005 CANCELLED AT 2026-02-11T00:52:13 DUE TO TIME LIMIT ***
