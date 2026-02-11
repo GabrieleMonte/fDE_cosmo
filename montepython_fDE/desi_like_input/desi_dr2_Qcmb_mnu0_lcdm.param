@@ -1,0 +1,34 @@
+#------Experiments to test (separated with commas)-----
+#data.experiments=['bao_desi_DR2','Qcmb', 'planck_like_tau_prior']
+data.experiments=['bao_desi_DR2','Qcmb']
+
+
+data.over_sampling=[1]
+
+# Cosmological parameters list
+
+data.parameters['omega_b']      = [  2.2377,   None, None,      0.015, 0.01, 'cosmo']
+data.parameters['omega_m']    = [ 0.14208,   None, None,     0.001,    1, 'cosmo']
+data.parameters['theta_s_100']  = [ 1.04110,   None, None,    0.00030,    1, 'cosmo']
+#data.parameters['ln10^{10}A_s'] = [  3.0447,   None, None,      0.015,    1, 'cosmo']
+#data.parameters['n_s']          = [  0.9659,   None, None,     0.0042,    1, 'cosmo']
+#data.parameters['tau_reio']     = [  0.0543,  0.004, None,      0.008,    1, 'cosmo']
+
+# Derived parameters
+data.parameters['Omega_Lambda']    = [1, None, None, 0,     1,   'derived']
+data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
+
+# Other cosmo parameters (fixed parameters, precision parameters, etc.)
+data.cosmo_arguments['sBBN file'] = data.path['cosmo']+'/external/bbn/sBBN.dat'
+
+data.cosmo_arguments['k_pivot'] = 0.05
+data.cosmo_arguments['N_ur'] = 3.044
+data.cosmo_arguments['ln10^{10}A_s'] =   3.0447
+data.cosmo_arguments['n_s']          =   0.9659
+data.cosmo_arguments['tau_reio']     =   0.0543
+data.cosmo_arguments['output']	=	''
+
+#------ Mcmc parameters ----
+
+data.N=10
+data.write_step=5

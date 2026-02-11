@@ -11,11 +11,6 @@ chains/*
 # Compiled python files
 *.pyc
 
-# Custom configuration files
-*.conf
-
-# Custom parameter files
-*.param
 
 # Build files of sphinx-doc
 sphinx-documentation/_build/
@@ -32,8 +27,6 @@ build/
 dist/
 *.egg-info/
 
-# Ignore the JLA files if present
-data/JLA/
 
 # Ignore the coverage reports
 .coverage
