@@ -13,10 +13,12 @@ smooth2D = 0.6
 file_name0='2026-02-10_50030_'
 desi_cmb_fa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_fa_v1/'+file_name0
 desi_cmb_w0wa_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_w0wa_v1/'+file_name0
+desi_cmb_lcdm_dir='/scratch/09218/gab97/chains/desi_dr2_Qcmb_lcdm_v1/'+file_name0
+
 
 desi_cmb_fa_samples= loadMCSamples(desi_cmb_fa_dir,settings={'ignore_rows': burnin, 'smooth_scale_1D': smooth1D, 'smooth_scale_2D': smooth2D})
 desi_cmb_w0wa_samples= loadMCSamples(desi_cmb_w0wa_dir,settings={'ignore_rows': burnin, 'smooth_scale_1D': smooth1D, 'smooth_scale_2D': smooth2D})
-
+desi_cmb_lcdm_samples= loadMCSamples(desi_cmb_lcdm_dir,settings={'ignore_rows': burnin, 'smooth_scale_1D': smooth1D, 'smooth_scale_2D': smooth2D})
 
 pars_w0wa = ["omega_b","omega_m","theta_s_100","w0_fld","wa_fld","H0"]
 
@@ -34,6 +36,13 @@ pairs_fa = [
   ("theta_s_100", "omega_b"),("theta_s_100", "omega_m"),
   ("fa_fld", "omega_b"),("fa_fld", "omega_m"),("fa_fld", "theta_s_100"),
   ("H0", "omega_b"),("H0", "omega_m"),("H0", "theta_s_100"),("H0", "fa_fld")]
+
+pars_lcdm = ["omega_b","omega_m","theta_s_100","H0"]
+
+pairs_lcdm = [
+  ("omega_m", "omega_b"),
+  ("theta_s_100", "omega_b"),("theta_s_100", "omega_m"),
+  ("H0", "omega_b"),("H0", "omega_m"),("H0", "theta_s_100")]
 
 def save_posteriors(chain_sample,pars,pairs,name):
     save_dict= {}
@@ -68,4 +77,6 @@ def save_posteriors(chain_sample,pars,pairs,name):
     return None
 save_posteriors(desi_cmb_w0wa_samples,pars_w0wa,pairs_w0wa,'desi_cmb_w0wa')
 save_posteriors(desi_cmb_fa_samples,pars_fa,pairs_fa,'desi_cmb_fa')
+save_posteriors(desi_cmb_w0wa_samples,pars_w0wa,pairs_w0wa,'desi_cmb_w0wa')
+save_posteriors(desi_cmb_lcdm_samples,pars_lcdm,pairs_lcdm,'desi_cmb_lcdm')
 
